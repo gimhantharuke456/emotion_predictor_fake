@@ -5,7 +5,7 @@ import requests
 import datetime
 import tensorflow as tf
 import gc
-
+import uvicorn
 app = FastAPI()
 
 # Set up CORS to allow requests from all origins
