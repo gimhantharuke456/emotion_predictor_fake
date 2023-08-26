@@ -48,10 +48,7 @@ async def predict_image(request: dict):
         with tf.device('/CPU:0'):
             emotion = analyze_emotion(filename)
         
-        # Clear TensorFlow session
-        DeepFace.close_session()
         
-        gc.collect()  # Perform garbage collection
         
         # Remove the downloaded image
         import os
